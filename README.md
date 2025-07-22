@@ -48,10 +48,24 @@ system-design-study/
 ├── diagrams/                      # Architecture and system design diagrams
 ├── docs/                          # Theoretical explanations and use cases
 ├── implements/
-│   ├── symfony/                   # PHP (Symfony) implementations
-│   ├── go/                        # Go implementations
-│   ├── nodejs/                    # JavaScript (Node.js) implementations
-│   └── springboot/                # Java (Spring Boot) implementations
+│   ├── platforms/                # Foundational building blocks
+│   | ├── project-name/              # Project implementation
+│   | |  ├── go/                        # Go implementations
+│   | |  ├── nodejs/                    # JavaScript (Node.js) implementations
+│   | |  ├── springboot/                # Java (Spring Boot) implementations
+│   | |  └── symfony/                   # PHP (Symfony) implementations
+│   ├── services/                 # Focused microservices
+│   | ├── project-name/              # Project implementation
+│   | |  ├── go/                        # Go implementations
+│   | |  ├── nodejs/                    # JavaScript (Node.js) implementations
+│   | |  ├── springboot/                # Java (Spring Boot) implementations
+│   | |  └── symfony/                   # PHP (Symfony) implementations
+│   ├── system/                   # Full end-to-end applications
+│   | ├── project-name/              # Project implementation
+│   | |  ├── go/                        # Go implementations
+│   | |  ├── nodejs/                    # JavaScript (Node.js) implementations
+│   | |  ├── springboot/                # Java (Spring Boot) implementations
+─   ─ ─  └── symfony/                   # PHP (Symfony) implementations
 ```
 
 ---
