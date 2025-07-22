@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - REDIS_ADDR=redis:6379
+      - POSTGRES_DSN=postgres://user:password@postgres:5454/urlshortener?sslmode=disable
+      - BASE_URL=http://172.19.0.4:8080/
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: urlshortener
+    ports:
+      - "5454:5432"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
