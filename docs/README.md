@@ -34,7 +34,7 @@ We organize system design challenges into **three core categories**:
 ---
 
 ### ⚙️ 3. Services
-**Focused microservices** providing specific capabilities, often embedded inside larger systems.
+> **Focused microservices** providing specific capabilities, often embedded inside larger systems.
 
 | Idea | Description | Priority |
 |------|-------------|----------|
