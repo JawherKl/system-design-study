@@ -117,7 +117,7 @@ curl -X POST http://localhost:8080/shorten \
 
 * [ ] Add support for custom short codes
 * [ ] Add click statistics tracking
-* [+] Add persistent storage fallback (PostgreSQL)
+* [ ] Add persistent storage fallback (PostgreSQL)
 * [ ] Add tests (unit + integration)
 
 ---
